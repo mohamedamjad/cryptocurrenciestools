@@ -1,5 +1,5 @@
 from distutils.core import setup
-
+import setuptools
 
 def readme():
     with open("README.md") as f:
@@ -7,7 +7,7 @@ def readme():
 
 setup(
   name='cryptocurrenciestools',
-  packages=['cryptocurrenciestools'], # this must be the same as the name above
+  packages=setuptools.find_packages(exclude=['contrib', 'docs', 'tests*']), # this must be the same as the name above
   version='0.1',
   description='Download and analyse cryptocurrencies data',
   long_description=readme(),
