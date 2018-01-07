@@ -16,6 +16,10 @@ setup(
   url='https://github.com/mohamedamjad/CMC_data_sniffer', # use the URL to the github repo
   download_url='https://github.com/mohamedamjad/CMC_data_sniffer/archive/0.1.tar.gz', # I'll explain this in a second
   keywords=['cryptocurrency', 'analysis', 'tools', 'bitcoin', 'data'], # arbitrary keywords
-  install_requires=['pandas','requests'],
-  classifiers=[],
+  classifiers=[
+    'Development Status :: 3 - Alpha',
+    'Programming Language :: Python :: 2.7',
+  ],
+  install_requires=['requests','pandas'],
+  python_requires='>=3',
 )

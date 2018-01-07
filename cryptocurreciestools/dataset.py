@@ -3,3 +3,4 @@ import requests
 
 class Dataset:
     def __init__(self):
+        print'OK'
